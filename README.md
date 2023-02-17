@@ -3,7 +3,7 @@ A React-based web application that provides users with an engaging and interacti
 
 <!-- TABLE OF CONTENTS -->
 <div id="top"></div>
-<details>
+<details open>
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#overview">Overview</a></li>
