@@ -1,7 +1,32 @@
 # Casino
+A React-based web application that provides users with an engaging and interactive game to practice and enhance their casino skills, designed with a user-friendly interface.
 
+<!-- TABLE OF CONTENTS -->
+<div id="top"></div>
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#buildwith">Built With</a></li>
+    <li><a href="#acknowledgments">React App</a></li>
+  </ol>
+</details>
 
+## Overview
+<div id="overview"></div>
+I built this simple React web application to allow users to practice their casino skills. The website features a simple game that requires users to guess the appropriate moves to increase their score. The game was designed to be interactive and fun, providing users with an engaging way to improve their knowledge and skillset of various casino games.
 
+To get started with the project, simply clone the repository and install the necessary dependencies. Then, run the application to start playing the game and practicing your casino skills.
+
+I hope that this project turns out to be useful for those looking to improve their casino skills and have fun in the process. If you have any feedback or suggestions, please feel free to open an issue or pull request.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Built With
+<div id="builtwith"></div>
+* [React](https://reactjs.org)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 ## Getting Started with Create React App
