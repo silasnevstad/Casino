@@ -1,9 +1,10 @@
 import React from 'react';
 
-function Balance({ score }) {
+function Balance({ score, highscore }) {
   return (
     <div className="score">
-      <span className="score-value">{score}</span>
+      <span className="score-value">Current:{score}</span>
+      <span className="highscore-value">Best:{highscore}</span>
     </div>
   );
 }

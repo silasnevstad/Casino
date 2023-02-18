@@ -4,6 +4,7 @@ import gameReducer from './reducers/gameReducer';
 const initialState = {
     game: {
         score: 0,
+        highscore: 0,
         dealerHand: [],
         playerHand: [],
         currentDealerScore: 0,

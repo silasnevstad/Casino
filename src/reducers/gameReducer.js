@@ -3,6 +3,7 @@ import { getDeck } from '../utils/deckUtils';
 const initialState = {
   initialScore: 0,
   score: 0,
+  highscore: 0,
   dealerHand: [],
   playerHand: [],
   currentDealerScore: 0,
@@ -56,6 +57,11 @@ const gameReducer = (state = initialState, action) => {
         };
       
     case 'UPDATE_SCORE_INCORRECT':
+      // if the score is higher than the current highscore, update the highscore
+      if (state.score > state.highscore) {
+        // update the highscore
+        state.highscore = state.score;
+      }
       return {
         ...state,
         score: 0,
@@ -72,6 +78,7 @@ const gameReducer = (state = initialState, action) => {
       return {
         ...initialState,
         initialScore: state.initialScore,
+        highscore: state.highscore,
         score: state.score,
         deck: getDeck(),
       };

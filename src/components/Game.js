@@ -2,7 +2,7 @@ import React from 'react';
 import Hand from './Hand';
 import Controls from './Control';
 import Score from './Score';
-import HelpButton from './HelpButton';
+import HelpView from './HelpView';
 import { useDispatch, useSelector } from 'react-redux';
 import { dealCards, hit, stand, resetGame, guessHit, guessDouble, guessSplit, guessStand, guess } from '../actions/gameActions';
 
@@ -45,8 +45,8 @@ function Game() {
 
     return (
         <div>
-            <Score score={game.score} />
-            <HelpButton />
+            <Score score={game.score} highscore={game.highscore} />
+            <HelpView  />
             <Hand cards={game.dealerHand} score={game.currentDealerScore} isDealer={true} gameStage={game.gameStage} />
             <Hand cards={game.playerHand} score={game.currentPlayerScore} isDealer={false} gameStage={game.gameStage} />
             <Controls

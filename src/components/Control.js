@@ -10,19 +10,19 @@ function Controls({ gameStage, hasPair, handleDealClick, handleHitClick, handleS
         )}
         {gameStage === 'inProgress' && (
             <>
-                <button className="btn btn-primary" onClick={handleHitClick}>
+                <button className="btn btn-primary btn-hit" onClick={handleHitClick}>
                     Hit
                 </button>
-                <button className="btn btn-primary" onClick={handleStandClick}>
+                <button className="btn btn-primary btn-stand" onClick={handleStandClick}>
                     Stand
                 </button>
-                <button className="btn btn-primary" onClick={handleDoubleClick}>
+                <button className="btn btn-primary btn-double" onClick={handleDoubleClick}>
                     Double
                 </button>
             </>
         )}
         {gameStage === 'inProgress' && hasPair && (
-            <button className="btn btn-primary" onClick={handleSplitClick}>
+            <button className="btn btn-primary btn-split" onClick={handleSplitClick}>
                 Split
             </button>
         )}
